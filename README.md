@@ -17,11 +17,11 @@ Step 6: Perform exact inference using the defined evidence and query variables.<
 Step 7: Print the results.<br>
 
 ## Program :
-
-Developed by: PRAKASH P
-
-Register number: 212221040126
-~~~
+```
+DEVELOPED BY: P. PRAKASH
+              212221040126
+```
+```
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
@@ -39,7 +39,7 @@ evidence={'JohnCalls':1,'MarryCalls':0}
 query_variable='Burglary'
 result=inference.query(variables=[query_variable],evidence=evidence)
 print(result)
-~~~
+```
 
 ## Output :
 
